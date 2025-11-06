@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Testimonials from '../components/Testimonials';
+import Gallery from '../components/Gallery';
+import ContactInfo from '../components/ContactInfo';
+import CostCalculator from '../components/CostCalculator';
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -145,6 +149,18 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Gallery Section */}
+      <Gallery />
+
+      {/* Cost Calculator Section */}
+      <CostCalculator />
+
+      {/* Testimonials Section */}
+      <Testimonials />
+
+      {/* Contact Info Section */}
+      <ContactInfo />
     </div>
   );
 };

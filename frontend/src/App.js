@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import BookService from './pages/BookService';
+import LiveChat from './components/LiveChat';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/book" element={<BookService />} />
         </Routes>
+        <LiveChat />
       </div>
     </Router>
   );
